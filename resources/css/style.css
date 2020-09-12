@@ -169,7 +169,8 @@ input[type=submit] {
 }
 
 .btn-ghost:link,
-.btn-ghost:visited {
+.btn-ghost:visited,
+.btn-white {
     border: 1px solid #3d44ef;
     color: #3d44ef;
 }
@@ -190,6 +191,11 @@ input[type=submit]:active {
 .btn-ghost:active {
     border: 1px solid #2e34bf;
     color: #fff;
+}
+
+.btn-white{ /* Make it clear to viewers */
+	border: 1px solid #fff!important;
+	color: #fff!important;
 }
 
 
@@ -286,10 +292,12 @@ header {
     z-index: 9999;
 }
 
-.sticky .main-nav { margin-top: 18px; }
+.sticky .main-nav { margin-top: 0; } 
+/* Inconvinient for user to not be able to select above nav */
 
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
+	display: block;
     padding: 16px 0;
     color: #555;
 }
